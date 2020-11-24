@@ -20,7 +20,8 @@
 -->
 <language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<lang id="1" code="en">english</lang>
-	<lang id="2" code="de">deutsch</lang>
+	<lang id="21" code="fa">persian</lang>
+	<!-- <lang id="2" code="de">deutsch</lang>
 	<lang id="3" code="de-StudIP">deutsch (studIP)</lang>
 	<lang id="4" code="fr">french</lang>
 	<lang id="5" code="it">italian</lang>
@@ -39,7 +40,7 @@
 	<lang id="18" code="tr">turkish</lang>
 	<lang id="19" code="uk">ukrainian</lang>
 	<lang id="20" code="th">thai</lang>
-	<lang id="21" code="fa">persian</lang>
+	
 	<lang id="22" code="cs">czech</lang>
 	<lang id="23" code="gl">galician</lang>
 	<lang id="24" code="fi">finnish</lang>
@@ -54,5 +55,5 @@
 	<lang id="33" code="bn">bengali</lang>
 	<lang id="34" code="hi">hindi</lang>
 	<lang id="35" code="ta">tamil</lang>
-	<lang id="36" code="lo">lao</lang>
+	<lang id="36" code="lo">lao</lang> -->
 </language>

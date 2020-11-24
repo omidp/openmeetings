@@ -58,7 +58,7 @@
 		<class>org.apache.openmeetings.db.entity.user.UserContact</class>
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 		<properties>
-			<property name="openjpa.RuntimeUnenhancedClasses" value="unsupported" />
+			<property name="openjpa.RuntimeUnenhancedClasses" value="supported" />
 			<property name="openjpa.ConnectionDriverName" value="org.apache.commons.dbcp2.BasicDataSource" />
 			<property name="openjpa.ConnectionProperties"
 				value="DriverClassName=org.postgresql.Driver
@@ -69,8 +69,8 @@
 					, maxWaitMillis=10000
 					, TestOnBorrow=true
 					, poolPreparedStatements=true
-					, Username=${db_user}
-					, Password=${db_pass}" />
+					, Username=openmeetings
+					, Password=openmeetings" />
 			<property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema" />
 			<property name="openjpa.Log" value="DefaultLevel=WARN, Tool=INFO" />
 			<property name="openjpa.DataCache" value="true" />

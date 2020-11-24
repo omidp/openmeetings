@@ -58,26 +58,25 @@
 		<class>org.apache.openmeetings.db.entity.user.UserContact</class>
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 		<properties>
-			<property name="openjpa.RuntimeUnenhancedClasses" value="unsupported" />
+			<property name="openjpa.RuntimeUnenhancedClasses" value="supported" />
 			<property name="openjpa.ConnectionDriverName" value="org.apache.commons.dbcp2.BasicDataSource" />
 			<property name="openjpa.ConnectionProperties"
-				value="DriverClassName=org.h2.Driver
-					, Url=jdbc:h2:./omdb;create=true
-					, create=true
+				value="DriverClassName=org.postgresql.Driver
+					, Url=jdbc:postgresql://localhost:5432/openmeetings
 					, maxTotal=100
 					, maxIdle=100
 					, minIdle=0
 					, maxWaitMillis=10000
 					, TestOnBorrow=true
-					, Username=
-					, Password=" />
+					, poolPreparedStatements=true
+					, Username=openmeetings
+					, Password=openmeetings" />
 			<property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema" />
 			<property name="openjpa.Log" value="DefaultLevel=WARN, Tool=INFO" />
 			<property name="openjpa.DataCache" value="true" />
-			<!-- QueryCache disabled due to changes outside of JPA doesn't take effect with caching -->
-			<property name="openjpa.QueryCache" value="false" />
-			<property name="openjpa.jdbc.DBDictionary" value="batchLimit=100" />
+			<property name="openjpa.QueryCache" value="true" />
 			<property name="openjpa.jdbc.QuerySQLCache" value="false" />
+			<!--property name="openjpa.RemoteCommitProvider" value="tcp(Addresses=127.0.0.1)" /-->
 		</properties>
 	</persistence-unit>
 </persistence>

@@ -669,6 +669,17 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+    <groupId>javax.xml.ws</groupId>
+    <artifactId>jaxws-api</artifactId>
+    <version>2.3.1</version>
+</dependency>
+<dependency>
+  <groupId>com.sun.xml.ws</groupId>
+  <artifactId>jaxws-ri</artifactId>
+  <version>2.3.0</version>
+  <type>pom</type>
+</dependency>
+		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-inline</artifactId>
 			<scope>test</scope>
@@ -729,7 +740,7 @@
 					<shortRevisionLength>7</shortRevisionLength>
 				</configuration>
 			</plugin>
-			<plugin>
+				<!--<plugin>
 				<groupId>org.apache.rat</groupId>
 				<artifactId>apache-rat-plugin</artifactId>
 				<configuration>
@@ -742,7 +753,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin>-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -956,7 +967,7 @@
 					<artifactId>maven-clean-plugin</artifactId>
 					<version>${maven-clean-plugin.version}</version>
 				</plugin>
-				<plugin>
+				<!--<plugin>
 					<groupId>org.apache.rat</groupId>
 					<artifactId>apache-rat-plugin</artifactId>
 					<version>${apache-rat-plugin.version}</version>
@@ -998,7 +1009,7 @@
 							<exclude>**/localhost.jks</exclude>
 						</excludes>
 					</configuration>
-				</plugin>
+				</plugin>-->
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>keytool-maven-plugin</artifactId>
@@ -1126,7 +1137,7 @@
 					</reportSet>
 				</reportSets>
 			</plugin>
-			<plugin>
+			<!--<plugin>
 				<groupId>org.apache.rat</groupId>
 				<artifactId>apache-rat-plugin</artifactId>
 				<configuration>
@@ -1139,7 +1150,7 @@
 						</reports>
 					</reportSet>
 				</reportSets>
-			</plugin>
+			</plugin>-->
 		</plugins>
 	</reporting>
 	<profiles>
@@ -1250,7 +1261,7 @@
 			<id>generate-third-party</id>
 			<build>
 				<plugins>
-					<plugin>
+					<!--<plugin>
 						<groupId>org.codehaus.mojo</groupId>
 						<artifactId>license-maven-plugin</artifactId>
 						<version>${license-maven-plugin.version}</version>
@@ -1313,7 +1324,7 @@
 								</configuration>
 							</execution>
 						</executions>
-					</plugin>
+					</plugin>-->
 				</plugins>
 			</build>
 		</profile>
@@ -1375,7 +1386,7 @@
 												<ignore />
 											</action>
 										</pluginExecution>
-										<pluginExecution>
+										<!--<pluginExecution>
 											<pluginExecutionFilter>
 												<groupId>org.apache.rat</groupId>
 												<artifactId>apache-rat-plugin</artifactId>
@@ -1387,7 +1398,7 @@
 											<action>
 												<ignore />
 											</action>
-										</pluginExecution>
+										</pluginExecution>-->
 										<pluginExecution>
 											<pluginExecutionFilter>
 												<groupId>org.apache.maven.plugins</groupId>
